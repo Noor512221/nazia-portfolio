@@ -8,7 +8,7 @@ export default function Home() {
     <div className="home-container">
       <section className="hero">
         <div className="container hero-content">
-          <span className="badge">Available for Hire & Projects</span>
+          <span className="badge">Wellcome to my-portfolio</span>
           <h1 className="hero-title">Building Scalable Web Apps & Automated Systems</h1>
           <p className="hero-subtitle">
             Hi, I’m a Developer crafting modern web experiences, responsive frontend applications, and custom automated workflows.
