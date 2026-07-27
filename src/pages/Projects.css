@@ -1,0 +1,127 @@
+/* src/styles/projects.css */
+:root {
+  --primary: #2563eb;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+  --border: #e2e8f0;
+}
+
+.projects-header {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.projects-header .badge-primary {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.projects-header .page-title {
+  font-size: 3.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card.is-hovering {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.card-cover {
+  height: 180px;
+  background-color: var(--bg-light);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ffffff;
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.cover-placeholder {
+  font-size: 5rem;
+  color: #cbd5e1;
+  font-weight: bold;
+}
+
+.card-details {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background-color: var(--bg-light);
+  color: #334155;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+
+.btn-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}

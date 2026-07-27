@@ -1,0 +1,98 @@
+/* src/styles/contact.css */
+:root {
+  --primary: #2563eb;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+  --border: #e2e8f0;
+}
+
+.contact-header {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.contact-header .badge-light {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.contact-header .page-title {
+  font-size: 3.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) 1fr;
+  gap: 50px;
+  padding-bottom: 80px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.info-column {
+  background-color: var(--bg-light);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
